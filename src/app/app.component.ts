@@ -1,10 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-//#region Methods which are defined in the .js files.
-
-declare function printResult(input: string): void;
-
-//#endregion
+// declare the javascript function
+declare function myMethod(): any;
 
 @Component({
   selector: 'app-root',
@@ -12,9 +9,7 @@ declare function printResult(input: string): void;
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-
   ngOnInit() {
-    printResult('Hello world!'); // Function call
+    myMethod(); // JS file call
   }
-
 }

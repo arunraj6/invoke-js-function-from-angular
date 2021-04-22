@@ -1,0 +1,3 @@
+function myMethod() {
+    alert("Loaded!");
+}
