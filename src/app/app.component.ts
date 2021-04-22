@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-// declare the javascript function
-declare function myMethod(): any;
+// declare the javascript function here
+declare function myMethod(message): any;
 
 @Component({
   selector: 'app-root',
@@ -10,6 +10,6 @@ declare function myMethod(): any;
 })
 export class AppComponent implements OnInit {
   ngOnInit() {
-    myMethod(); // JS file call
+    myMethod('Hello world!'); // function call
   }
 }
